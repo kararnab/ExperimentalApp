@@ -1,17 +1,26 @@
-*.iml
-.gradle
-/local.properties
+# A general purpose Android Studio gitignore, we can reuse this config across projects
 
-# Gradle:
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle generated files
+.gradle/
+
+# User-specific configurations
 .idea/gradle.xml
-.idea/libraries
-
-# User-specific stuff:
+.idea/libraries/
 .idea/workspace.xml
 .idea/tasks.xml
-.idea/dictionaries
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
 .idea/vcs.xml
-.idea/jsLibraryMappings.xml
+.idea/caches
+*.iml
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -21,8 +30,17 @@
 .idea/dynamic.xml
 .idea/uiDesigner.xml
 
-
+# OS-specific files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#Uncategorized
 /build
 /captures
 .externalNativeBuild
+
