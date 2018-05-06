@@ -32,3 +32,12 @@
 
 #Since Retrofit uses Okio under the hood adding its proguard rules too
 -dontwarn okio.**
+
+#Moshi Rules
+# Since okio is already covered by retrofit we don't do redundant declaration
+#-dontwarn okio.**
+-dontwarn javax.annotation.**
+-keepclasseswithmembers class * {
+    @com.squareup.moshi.* <methods>;
+}
+-keep @com.squareup.moshi.JsonQualifier interface *
